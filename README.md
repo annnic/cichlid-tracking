@@ -1,2 +1,2 @@
-# cichlid_tracking
+# cichlid-tracking
 Package for recording and tracking
