@@ -13,7 +13,7 @@ import imageio
 import PySpin
 import glob
 import sys
-import tracker_functions
+import cichlidtracking.recording.tracker_functions
 from tkinter.filedialog import askdirectory
 from tkinter import *
 

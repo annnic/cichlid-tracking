@@ -5,10 +5,10 @@ from tkinter import *
 import datetime
 import Define_ROI
 import yaml
-import tracker_functions
+import cichlidtracking.recording.tracker_functions
 import PySpin
 import cv2
-import run_median
+import cichlidtracking.recording.run_median
 import shutil
 
 
