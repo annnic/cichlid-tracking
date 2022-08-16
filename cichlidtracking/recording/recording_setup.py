@@ -2,14 +2,16 @@
 import os
 from tkinter.filedialog import askdirectory
 from tkinter import *
+import shutil
+
 import datetime
-import cichlidtracking.recording.Define_ROI
 import yaml
-import cichlidtracking.recording.tracker_functions
 import PySpin
 import cv2
+
+import cichlidtracking.recording.Define_ROI
 import cichlidtracking.recording.run_median
-import shutil
+import cichlidtracking.recording.tracker_functions
 
 
 def cam_input():

@@ -1,9 +1,9 @@
 # Functions which are used for fish tracking
+import os
 
 import yaml
 import numpy as np
 import cv2
-import os
 import datetime
 
 

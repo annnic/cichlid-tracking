@@ -3,19 +3,21 @@
 # Copyright (c) 2019 Vassilis Bitsikas
 # Modified by Annika Nichols
 ##########
+import time
+import os
+import glob
+import sys
+from tkinter.filedialog import askdirectory
+from tkinter import *
 
 import cv2
 import numpy as np
-import time
 import datetime
-import os
 import imageio
 import PySpin
-import glob
-import sys
+
 import cichlidtracking.recording.tracker_functions
-from tkinter.filedialog import askdirectory
-from tkinter import *
+
 
 # Allows a user to select a directory
 root = Tk()

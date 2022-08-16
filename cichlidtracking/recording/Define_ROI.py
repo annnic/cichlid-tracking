@@ -1,7 +1,8 @@
+import os
+
 import cv2
 import PySpin
 import yaml
-import os
 
 
 def roi_input():
