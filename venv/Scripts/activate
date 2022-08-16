@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="U:\Home\nichol0000\Documents\GitHub\cichlid-tracking\venv"
+VIRTUAL_ENV="U:\Home\ligyfe56\Documents\cichlid-tracking\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

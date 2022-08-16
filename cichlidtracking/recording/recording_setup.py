@@ -9,9 +9,9 @@ import yaml
 import PySpin
 import cv2
 
-import cichlidtracking.recording.Define_ROI
-import cichlidtracking.recording.run_median
-import cichlidtracking.recording.tracker_functions
+from cichlidtracking.recording.Define_ROI import define_roi
+from cichlidtracking.recording.run_median import background
+from cichlidtracking.recording.tracker_functions import load_yaml
 
 
 def cam_input():
@@ -89,8 +89,8 @@ for camera in cams:
     # system.ReleaseInstance()
 
     # define ROIs
-    Define_ROI.define_roi(cam_ID, path)
-    rois = tracker_functions.load_yaml(path, "roi_file")
+    define_roi(cam_ID, path)
+    rois = load_yaml(path, "roi_file")
 
     # make a sub directory for each ROI recording
     for roi in range(len(rois) - 1):
@@ -110,7 +110,7 @@ for camera in cams:
             print("Directory ", path, " already exists")
 
     # make background image
-    run_median.background(cam_ID, 3, 1, 1280, 960, path, percentile=90)
+    background(cam_ID, 3, 1, 1280, 960, path, percentile=90)
 
     # add species name to the camera (of the last roi, in each tank it should be consistently the same species)
     shutil.move(path, path + "_" + meta_data["species"].replace(' ', '-'))

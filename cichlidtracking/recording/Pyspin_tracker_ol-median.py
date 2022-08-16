@@ -16,7 +16,7 @@ import datetime
 import imageio
 import PySpin
 
-import cichlidtracking.recording.tracker_functions
+from cichlidtracking.recording.tracker_functions import load_yaml
 
 
 # Allows a user to select a directory
@@ -27,7 +27,7 @@ rootdir = askdirectory()
 root.destroy()
 
 # load yaml config file
-params = tracker_functions.load_yaml(rootdir, "config")
+params = load_yaml(rootdir, "config")
 
 # find and load background file
 if len(glob.glob(os.path.join(rootdir, "*.png"))) != 1:
@@ -57,7 +57,7 @@ if len(glob.glob(rootdir + "\\roi_file*")) != 1:
         use_full_roi = True
         rois = {'roi_0': (0, 0, width_trim, height_trim)}
 else:
-    rois = tracker_functions.load_yaml(rootdir, "roi_file")
+    rois = load_yaml(rootdir, "roi_file")
 
 # cam numbers:
 cam_n = ['19463146', '19463369', '19463356', '19503389', '19503390', '19463370']

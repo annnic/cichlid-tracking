@@ -1,6 +1,10 @@
 #pycharmfiles
 .idea/
 
+#venv, use the requirements to load packages
+.venv/
+venv/
+
 #Byte-compiled/optimized/DLLfiles
 __pycache__/
 *.py[cod]

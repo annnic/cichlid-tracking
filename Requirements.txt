@@ -1,6 +1,7 @@
 numpy
 datetime
 imageio
+imageio-ffmpeg
 opencv-python
 pyyaml
 pandas
