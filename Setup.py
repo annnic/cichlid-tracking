@@ -8,7 +8,7 @@ install_requires = [
 ]
 
 setup(
-    name="cichlid-tracking",
+    name="cichlidtracking",
     install_requires=install_requires,
     version="0.0.1",
     description="Recording and online tracking for cichlids",

@@ -1,0 +1,15 @@
+README.md
+setup.py
+cichlidtracking/__init__.py
+cichlidtracking.egg-info/PKG-INFO
+cichlidtracking.egg-info/SOURCES.txt
+cichlidtracking.egg-info/dependency_links.txt
+cichlidtracking.egg-info/not-zip-safe
+cichlidtracking.egg-info/requires.txt
+cichlidtracking.egg-info/top_level.txt
+cichlidtracking/recording/Define_ROI.py
+cichlidtracking/recording/Pyspin_tracker_ol-median.py
+cichlidtracking/recording/__init__.py
+cichlidtracking/recording/recording_setup.py
+cichlidtracking/recording/run_median.py
+cichlidtracking/recording/tracker_functions.py

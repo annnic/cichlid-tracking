@@ -1,4 +1,4 @@
-#!/Users/annikanichols/Documents/cichlid-tracking/.venv/bin/python
+#!/Users/annikanichols/Documents/cichlidtracking/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
