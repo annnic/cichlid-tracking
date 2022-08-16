@@ -3,7 +3,7 @@ import os
 from tkinter.filedialog import askdirectory
 from tkinter import *
 import datetime
-import Define_ROI
+import cichlidtracking.recording.Define_ROI
 import yaml
 import cichlidtracking.recording.tracker_functions
 import PySpin
