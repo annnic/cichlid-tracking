@@ -60,7 +60,7 @@ else:
     rois = load_yaml(rootdir, "roi_file")
 
 # cam numbers:
-cam_n = ['19463146', '19463369', '19463356', '19503389', '19503390', '19463370']
+cam_n = ['19463146', '19463369', '19463356', '19503389', '19503390', '19463370', '16401371', '16401372']
 
 camera = cam_n.index(params["cam_ID"])
 roi_path = [f.path for f in os.scandir(rootdir) if f.is_dir()]
@@ -251,7 +251,7 @@ while 1 + params["fps"] * params["tot_hours"] * 60 * 60 > frame_id:
             #                                                                     date_f, movie_number, roi))
             # os.makedirs(os.path.dirname(movie_names[roi]), exist_ok=True)
             movie_names.append(roi_path[roi] + r"\\{}_{}_roi-{}.mp4".format(date_f, str(movie_number).zfill(3), roi))
-            writers.append(imageio.get_writer(movie_names[roi], fps=params["fps"], codec="libx264"))
+            writers.append(imageio.get_writer(movie_names[roi], fps=params["fps"], codec="libx264", quality=5))
             data.append(list())
 
     if frame_chunk % 200 == 0:

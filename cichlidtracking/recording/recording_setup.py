@@ -19,9 +19,9 @@ def cam_input():
     while True:
         cam_num = input("How many cameras would you like to run?: ")
 
-        if cam_num == '6':
+        if cam_num == '8':
             print("Will setup all ", cam_num, " cameras")
-            cameras = [[1], [2], [3], [4], [5], [6]]
+            cameras = [[1], [2], [3], [4], [5], [6], [7], [8]]
         else:
             print("Will setup ", cam_num, " cameras")
             cameras = []
@@ -62,7 +62,7 @@ cams = cam_input()
 
 # cam numbers:
 # cam_n = ['19463369', '19463146', '19503389', '19463356', '19463370', '19503390']
-cam_n = ['19503390', '19463356', '19463146', '19503389', '19463370', '19463369']
+cam_n = ['19503390', '19463356', '19463146', '19503389', '19463370', '19463369', '16401371', '16401372']
 
 # create a  sub directory for each camera
 for camera in cams:
